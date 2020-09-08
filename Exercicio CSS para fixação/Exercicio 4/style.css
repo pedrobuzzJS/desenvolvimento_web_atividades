@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.esquerda_superior {
+    background: red;
+    left: 0;
+    top: 0;
+}
+.direita_superior {
+    background: cornflowerblue;
+    right: 0;
+    top: 0;
+}
+.centro {
+    background: cadetblue;
+    left: 35%;
+    top: 40%;
+}
+.esquerda_infeior {
+    background: yellow;
+    left: 0;
+    bottom: 0;
+}
+.direita_inferior {
+    background: green;
+    right: 0;
+    bottom: 0;
+}
