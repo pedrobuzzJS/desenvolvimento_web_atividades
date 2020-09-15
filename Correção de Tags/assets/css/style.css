@@ -20,12 +20,12 @@ h1 a:hover {
     color: #fff;
 }
 
-.selecao {
+section {
     float: left;
     width: 660px;
 }
 
-.artigo {
+article {
     background-color: #ffffff;
     border: 1px solid;
     border-color: #cccccc;
@@ -50,7 +50,7 @@ h1 a:hover {
     clear: both;
 }
 
-.lista_ordenada {
+aside {
     float: right;
     width: 260px;
     background-color: #fffbe4;
@@ -67,7 +67,7 @@ aside ol {
     font-size: 12px;
 }
 
-.rodape {
+footer {
     font-size: 12px;
     text-align: center;
 }
