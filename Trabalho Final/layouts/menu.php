@@ -11,7 +11,7 @@
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(página atual)</span></a>
                 </li0>
                 <?php
-
+                    foreach ()
                 ?>
             </ul>
             <form class="form-inline my-2 my-lg-0">
