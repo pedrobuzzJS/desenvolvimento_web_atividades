@@ -16,9 +16,9 @@
 
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
-                <li0 class="nav-item active">
-                    <a class="nav-link" href="index.php">Home <span class="sr-only">(página atual)</span></a>
-                </li0>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.php">Inical <span class="sr-only">(página atual)</span></a>
+                </li>
                 <?php
                     foreach ($menus as $linha) {
                         echo '<li class="nav-item">
