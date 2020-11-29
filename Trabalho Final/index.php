@@ -2,6 +2,11 @@
 
     session_start();
 
+    if (isset($_GET['sair'])) {
+        session_destroy();
+        session_start();
+    }
+
     require_once(__DIR__ . "/bibliotecas/parametros.php");
     require_once BIBLIOTECAS .  'parametros.php';
     require_once BIBLIOTECAS .  'conexao.php';

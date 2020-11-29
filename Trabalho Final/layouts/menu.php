@@ -22,13 +22,13 @@
                 <?php
                     foreach ($menus as $linha) {
                         echo '<li class="nav-item">
-                              <a href="?pagina='. $linha[1] .'" class="nav-link">' .$linha[0].'</a>
+                              <a href="?'. $linha[1] .'" class="nav-link">' .$linha[0].'</a>
                               </li>';
                     }
                 ?>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sair</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="sair">Sair</button>
             </form>
         </div>
     </nav>
