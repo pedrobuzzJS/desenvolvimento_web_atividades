@@ -4,7 +4,8 @@
     </div>
 
 
-    <?php
-        require_once 'listar.php';
-        tabela();
-    ?>
+
+<?php
+    require_once BIBLIOTECAS . 'conexao.php';
+    require_once CADASTROS . 'regiao/listar.php';
+    listar($conn);

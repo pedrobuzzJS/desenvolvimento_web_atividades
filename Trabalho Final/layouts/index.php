@@ -4,6 +4,8 @@
     require_once LAYOUTS . 'menu.php';
     require_once LAYOUTS . 'footer.php';
 
+
+
     if (isset($_GET['regiao'])) {
         require_once CADASTROS . 'regiao/index.php';
     } else {

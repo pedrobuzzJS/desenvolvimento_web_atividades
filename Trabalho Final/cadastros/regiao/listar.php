@@ -1,42 +1,31 @@
 <?php
 
-   function tabela() {
-        try {
-            $sSql = "SELECT IDRegiao as 'Código',
-                        DescricaoRegiao as 'Nome'
-                   FROM regiao";
-            $stmt = $conn->prepare($sSql);
-            $stmt->execute();
-            $resultado = $stmt->fetchAll(PDO::FETCH_NUM);
-            $cabeca = [
-                'Código',
-                'Região'
-            ];
-        } catch (PDOException $e) {
-            echo $e;
-        }
+    function listar($conn) {
+        $sSql = 'select * from regiao';
+        $stmt = $conn->prepare($sSql);
+        $stmt->execute();
+        $resultado = $stmt->fetchAll();
         ?>
-            <form method="post" action="">
-            <table class="table table-striped">
+        <div class="container">
+        <table class="table table-striped">
             <tr>
                 <td>Código</td>
                 <td>Região</td>
-                <td>Ação</td>
-            </tr>>
-
-
+                <td>Ações</td>
+            </tr>
         <?php
-       if(count($resultado)) {
-           foreach ($resultado as $linha) {
-               echo '<tr>';
-               echo '<td>'.$linha['IDRegiao'].'</td';
-               echo '<td>'.$linha['DescricaoRegiao'].'</td';
-               echo '<td><a href="listar.php"></a></td>';
-               echo '</tr>';
-           }
-       }
-       ?>
-            </table>
-            </form>
-       <?php
-   }
+        if (count($resultado)) {
+
+            foreach ($resultado as $linha) {
+                echo '<tr>';
+                echo '  <td>' . $linha['IDRegiao'] . '</td>';
+                echo '  <td>' . $linha['DescricaoRegiao'] . '</td>';
+                echo '  <td>';
+                echo '      <a href="#?acao=alterar&codigo='.$linha['IDRegiao'].'"> Alterar </a>';
+                echo '      <a href="#?acao=excluir&codigo='.$linha['IDRegiao'].'"> Excluir </a>';
+                echo '  <td>';
+                echo '  </td>';
+                echo '</tr>';
+            }
+        }
+    }
