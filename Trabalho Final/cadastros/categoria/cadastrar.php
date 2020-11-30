@@ -29,7 +29,6 @@
                 $stmt->execute();
                 $aResult = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 $uID = intval($aResult[0]['IDCategoria']) + 1;
-                var_dump($uID);
 
                 $sSql = ' INSERT INTO categorias (IDCategoria, NomeCategoria, Descricao, Figura)
                       VALUES (:id, :nome, :descricao, :figura)';
@@ -43,6 +42,7 @@
                     ':figura'    => $_POST['cadastrar']
                 ]);
 
+                header('Location: index.php?pg=categoria');
 
             } catch (PDOException $e) {
                 echo $e->getMessage();

@@ -20,5 +20,8 @@
         if ($_GET['acao'] == 'alterar') {
             require_once CADASTROS . 'categoria/alterar.php';
             formularioAlterar();
+        } elseif (($_GET['acao'] == 'excluir')) {
+            require_once CADASTROS . 'categoria/deletar.php';
+            deletarCategoria($conn);
         }
     }

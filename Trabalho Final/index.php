@@ -1,7 +1,8 @@
 <?php
 
     session_start();
-
+    ob_start();
+;
     if (isset($_GET['sair'])) {
         session_destroy();
         session_start();
