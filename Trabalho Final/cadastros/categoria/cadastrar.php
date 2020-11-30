@@ -43,7 +43,6 @@
                     ':figura'    => $_POST['cadastrar']
                 ]);
 
-                header('Location: index.php?pg=categoria');
 
             } catch (PDOException $e) {
                 echo $e->getMessage();
