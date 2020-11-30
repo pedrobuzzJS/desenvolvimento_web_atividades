@@ -1,9 +1,8 @@
 <?php
     $menus = [
-            ['Produtos','produtos'],
             ['Regiao','regiao'],
-            ['Categorias','categorias'],
-            ['Transportadoras','transportadoras']
+            ['Categorias','categoria'],
+            ['Transportadoras','transportadora']
     ]
 ?>
 
@@ -22,7 +21,7 @@
                 <?php
                     foreach ($menus as $linha) {
                         echo '<li class="nav-item">
-                              <a href="?'. $linha[1] .'" class="nav-link">' .$linha[0].'</a>
+                              <a href="?pg='. $linha[1] .'" class="nav-link">' .$linha[0].'</a>
                               </li>';
                     }
                 ?>

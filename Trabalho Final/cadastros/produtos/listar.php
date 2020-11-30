@@ -21,16 +21,17 @@
         <div class="container">
             <table class="table table-striped">
                 <tr>
-                    <td>Código</td>
-                    <td>Produto</td>
-                    <td>Transportadora</td>
-                    <td>Categoria</td>
-                    <td>Quantidade</td>
-                    <td>Preço</td>
-                    <td>Estoque</td>
-                    <td>Ordem</td>
-                    <td>Reposição</td>
-                    <td>Descontinuado</td>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Transportadora</th>
+                    <th>Categoria</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th>Ordem</th>
+                    <th>Reposição</th>
+                    <th>Descontinuado</th>
+                    <th>Opções</th>
                 </tr>
         <?php
         if (count($resultado)) {
@@ -48,9 +49,8 @@
                 echo '  <td>' . $linha['NivelDeReposicao'] . '</td>';
                 echo '  <td>' . $linha['Descontinuado'] . '</td>';
                 echo '  <td>';
-                echo '      <a href="#?acao=alterar&codigo='.$linha['IDProduto'].'"> Alterar </a>';
-                echo '      <a href="#?acao=excluir&codigo='.$linha['IDProduto'].'"> Excluir </a>';
-                echo '  <td>';
+                echo '      <a href="&acao=alterar&codigo='.$linha['IDProduto'].'"> Alterar </a>';
+                echo '      <a href="&acao=excluir&codigo='.$linha['IDProduto'].'"> Excluir </a>';
                 echo '  </td>';
                 echo '</tr>';
             }

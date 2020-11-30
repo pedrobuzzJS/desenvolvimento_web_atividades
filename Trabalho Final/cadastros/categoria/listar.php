@@ -1,33 +1,37 @@
 <?php
-
     function listar($conn) {
-        $sSql = 'select * from categorias';
+        $sSql = 'select IDCategoria,
+                        NomeCategoria,
+                        Descricao
+                        from categorias;';
         $stmt = $conn->prepare($sSql);
         $stmt->execute();
-        $resultado = $stmt->fetchAll();
+        $resultado = $stmt->fetchAll(PDO::FETCH_NUM);
         ?>
         <div class="container">
             <table class="table table-striped">
                 <tr>
-                    <td>Código</td>
-                    <td>Nome</td>
-                    <td>Descrição</td>
-                    <td>Ações</td>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
                 </tr>
         <?php
         if (count($resultado)) {
 
             foreach ($resultado as $linha) {
                 echo '<tr>';
-                echo '  <td>' . $linha['IDCategoria'] . '</td>';
-                echo '  <td>' . $linha['NomeCategoria'] . '</td>';
-                echo '  <td>' . $linha['Descricao'] . '</td>';
-                echo '  <td>';
-                echo '      <a href="#?acao=alterar&codigo='.$linha['IDCategoria'].'"> Alterar </a>';
-                echo '      <a href="#?acao=excluir&codigo='.$linha['IDCategoria'].'"> Excluir </a>';
-                echo '  <td>';
-                echo '  </td>';
-                echo '</tr>';
+                foreach ($linha as $coluna) {
+                    echo '<td>' . $coluna . '</td>';
+                }
+                    echo '  <td>';
+                    echo '      <a href="index.php?pg=categoria&acao=alterar&codigo='.$linha[0].'"> Alterar </a>';
+                    echo '      <a href="index.php?pg=categoria&acao=excluir&codigo='.$linha[0].'"> Excluir </a>';
+                    echo '  </td>';
+                    echo '</tr>';
             }
         }
+        ?>
+        </table>
+        <?php
     }

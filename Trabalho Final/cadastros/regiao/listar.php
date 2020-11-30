@@ -21,11 +21,14 @@
                 echo '  <td>' . $linha['IDRegiao'] . '</td>';
                 echo '  <td>' . $linha['DescricaoRegiao'] . '</td>';
                 echo '  <td>';
-                echo '      <a href="#?acao=alterar&codigo='.$linha['IDRegiao'].'"> Alterar </a>';
-                echo '      <a href="#?acao=excluir&codigo='.$linha['IDRegiao'].'"> Excluir </a>';
+                echo '      <a href="&acao=alterar&codigo='.$linha['IDRegiao'].'"> Alterar </a>';
+                echo '      <a href="&acao=excluir&codigo='.$linha['IDRegiao'].'"> Excluir </a>';
                 echo '  <td>';
                 echo '  </td>';
                 echo '</tr>';
             }
         }
+        ?>
+        </table>
+        <?php
     }

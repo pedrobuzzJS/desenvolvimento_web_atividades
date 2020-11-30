@@ -23,8 +23,8 @@
                 echo '  <td>' . $linha['NomeConpanhia'] . '</td>';
                 echo '  <td>' . $linha['Telefone'] . '</td>';
                 echo '  <td>';
-                echo '      <a href="#?acao=alterar&codigo='.$linha['IDTransportadora'].'"> Alterar </a>';
-                echo '      <a href="#?acao=excluir&codigo='.$linha['IDTransportadora'].'"> Excluir </a>';
+                echo '      <a href=&acao=alterar&codigo='.$linha['IDTransportadora'].'"> Alterar </a>';
+                echo '      <a href="&acao=excluir&codigo='.$linha['IDTransportadora'].'"> Excluir </a>';
                 echo '  <td>';
                 echo '  </td>';
                 echo '</tr>';

@@ -2,11 +2,10 @@
 
     require_once LAYOUTS . 'header.php';
     require_once LAYOUTS . 'menu.php';
-    require_once LAYOUTS . 'footer.php';
+    echo '<div class="container">';
 
 
-
-    if (isset($_GET['regiao'])) {
+    /*if (isset($_GET['regiao'])) {
         require_once CADASTROS . 'regiao/index.php';
     } else {
         if (isset($_GET['produtos'])) {
@@ -20,4 +19,10 @@
                 }
             }
         }
+    }*/
+
+    if (!isset($_GET['pg'])) {
+        echo 'vai tomar no cu esse monte de merda q tem que terminar pra porra da terça';
+    } else {
+        require_once 'cadastros/' . $_GET['pg'] . '/index.php';
     }
