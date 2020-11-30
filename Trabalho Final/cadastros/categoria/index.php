@@ -9,12 +9,10 @@
     require_once BIBLIOTECAS . 'conexao.php';
     require_once CADASTROS . 'categoria/listar.php';
     listar($conn);
-    if(!isset($_POST['cadastrar'])) {
-        require_once CADASTROS . 'categoria/cadastrar.php';
-        formularioCategoriaCastro();
-        cadastrarCategoria($conn);
-        var_dump($_POST);
-    }
+
+    require_once CADASTROS . 'categoria/cadastrar.php';
+    formularioCategoriaCastro();
+
 
 
 

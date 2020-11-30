@@ -18,27 +18,37 @@
     }
 
     function cadastrarCategoria($conn) {
-        try {
-            $sSqlID = 'select IDCategoria
-                        from categorias
-                        order by IDCategoria
-                        desc limit 1;';
-            $stmt = $conn->prepare($sSqlID);
-            $stmt->execute();
-            $vet = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            $iID = intval($vet[0]['IDCategoria']) + 1;
-            var_dump($_POST);
+        if (isset($_POST['cadastrar'])) {
+            try {
+                $sSql = "SELECT IDCategoria 
+                       FROM categorias
+                      ORDER BY IDCategoria DESC
+                      LIMIT 1;";
 
-            $sSql = 'insert into categorias(IDCategoria, NomeCategoria, Descricao,Figura) 
-                     values (:id,:nome,:descricao,:figura);';
-            $stmt = $conn->prepare($sSql);
-            $stmt->execute(var_dump(array(
-                ':id' => $iID,
-                ':nome' => $_POST['categoria'],
-                ':descricao' => $_POST['descricao'],
-                ':figura' => 'vai ser foder merda'
-            )));
-        } catch (PDOException $e) {
-            echo $e->getMessage();
+                $stmt = $conn->prepare($sSql);
+                $stmt->execute();
+                $aResult = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                $uID = intval($aResult[0]['IDCategoria']) + 1;
+                var_dump($uID);
+
+                $sSql = ' INSERT INTO categorias (IDCategoria, NomeCategoria, Descricao, Figura)
+                      VALUES (:id, :nome, :descricao, :figura)';
+
+                $stmt = $conn->prepare($sSql);
+
+                $stmt->execute([
+                    ':id'        => $uID,
+                    ':nome'      => $_POST['categoria'],
+                    ':descricao' => $_POST['descricao'],
+                    ':figura'    => $_POST['cadastrar']
+                ]);
+
+                header('Location: index.php?pg=categoria');
+
+            } catch (PDOException $e) {
+                echo $e->getMessage();
+            }
         }
     }
+
+    cadastrarCategoria($conn);
