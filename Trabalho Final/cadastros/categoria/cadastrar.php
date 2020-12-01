@@ -49,5 +49,3 @@
             }
         }
     }
-
-    cadastrarCategoria($conn);
