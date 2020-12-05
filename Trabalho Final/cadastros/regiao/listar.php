@@ -1,34 +1,35 @@
 <?php
-
     function listar($conn) {
-        $sSql = 'select * from regiao';
+        $sSql = 'select IDRegiao,
+                        DescricaoRegiao
+                        from regiao;';
         $stmt = $conn->prepare($sSql);
         $stmt->execute();
-        $resultado = $stmt->fetchAll();
+        $resultado = $stmt->fetchAll(PDO::FETCH_NUM);
         ?>
         <div class="container">
         <table class="table table-striped">
             <tr>
-                <td>Código</td>
-                <td>Região</td>
-                <td>Ações</td>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Ações</th>
             </tr>
-        <?php
-        if (count($resultado)) {
+            <?php
+            if (count($resultado)) {
 
-            foreach ($resultado as $linha) {
-                echo '<tr>';
-                echo '  <td>' . $linha['IDRegiao'] . '</td>';
-                echo '  <td>' . $linha['DescricaoRegiao'] . '</td>';
-                echo '  <td>';
-                echo '      <a href="&acao=alterar&codigo='.$linha['IDRegiao'].'"> Alterar </a>';
-                echo '      <a href="&acao=excluir&codigo='.$linha['IDRegiao'].'"> Excluir </a>';
-                echo '  <td>';
-                echo '  </td>';
-                echo '</tr>';
+                foreach ($resultado as $linha) {
+                    echo '<tr>';
+                    foreach ($linha as $coluna) {
+                        echo '<td>' . $coluna . '</td>';
+                    }
+                    echo '  <td>';
+                    echo '      <a href="index.php?pg=regiao&acao=alterar&codigo='.$linha[0].'"> Alterar </a>';
+                    echo '      <a href="index.php?pg=regiao&acao=excluir&codigo='.$linha[0].'"> Excluir </a>';
+                    echo '  </td>';
+                    echo '</tr>';
+                }
             }
-        }
-        ?>
+            ?>
         </table>
         <?php
     }

@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5a8c21-148c-41b4-8700-73e25777681c" name="Default Changelist" comment="header">
-      <change afterPath="$PROJECT_DIR$/layouts/menu.php" afterDir="false" />
+    <list default="true" id="7d5a8c21-148c-41b4-8700-73e25777681c" name="Default Changelist" comment="sistema de login parcialmente completo, falta autenticação">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadastros/regiao/listar.php" beforeDir="false" afterPath="$PROJECT_DIR$/cadastros/regiao/listar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +46,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cadastros/transportadora" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\desenvolvimento_web_atividades\Trabalho Final\cadastros\transportadora" />
+      <recent name="C:\wamp64\www\desenvolvimento_web_atividades\Trabalho Final\cadastros\produtos" />
+      <recent name="C:\wamp64\www\desenvolvimento_web_atividades\Trabalho Final\cadastros\categoria" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -60,7 +65,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606678142442</updated>
-      <workItem from="1606678143493" duration="6468000" />
+      <workItem from="1606678143493" duration="46804000" />
+      <workItem from="1607121462134" duration="1378000" />
     </task>
     <task id="LOCAL-00001" summary="estabelecendo conexâp">
       <created>1606679289778</created>
@@ -90,7 +96,168 @@
       <option name="project" value="LOCAL" />
       <updated>1606681043336</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="menu quase dinâmico">
+      <created>1606684700626</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606684700626</updated>
+    </task>
+    <task id="LOCAL-00006" summary="inicio do menu dinâmico">
+      <created>1606686280603</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606686280603</updated>
+    </task>
+    <task id="LOCAL-00007" summary="menu dinâmico pronto">
+      <created>1606686917004</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606686917004</updated>
+    </task>
+    <task id="LOCAL-00008" summary="pequeno alteração de menu inicial">
+      <created>1606687046565</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606687046565</updated>
+    </task>
+    <task id="LOCAL-00009" summary="title alterado">
+      <created>1606687095543</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606687095543</updated>
+    </task>
+    <task id="LOCAL-00010" summary="inicio da página de login">
+      <created>1606687536401</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606687536401</updated>
+    </task>
+    <task id="LOCAL-00011" summary="página de login feita">
+      <created>1606688869786</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606688869786</updated>
+    </task>
+    <task id="LOCAL-00012" summary="deletar">
+      <created>1606689635972</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606689635972</updated>
+    </task>
+    <task id="LOCAL-00013" summary="cadastrar">
+      <created>1606689665740</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606689665740</updated>
+    </task>
+    <task id="LOCAL-00014" summary="alterar">
+      <created>1606689694137</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606689694137</updated>
+    </task>
+    <task id="LOCAL-00015" summary="listar">
+      <created>1606689714714</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606689714714</updated>
+    </task>
+    <task id="LOCAL-00016" summary="cruds">
+      <created>1606689858053</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606689858053</updated>
+    </task>
+    <task id="LOCAL-00017" summary="indexadores">
+      <created>1606692986827</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606692986828</updated>
+    </task>
+    <task id="LOCAL-00018" summary="hi para cada página">
+      <created>1606693798357</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606693798357</updated>
+    </task>
+    <task id="LOCAL-00019" summary="tabela de regiao">
+      <created>1606697218740</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606697218740</updated>
+    </task>
+    <task id="LOCAL-00020" summary="direcionamentor para as alterações e exclusões">
+      <created>1606703755539</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1606703755539</updated>
+    </task>
+    <task id="LOCAL-00021" summary="direcionamentor para as alterações e exclusões">
+      <created>1606714868881</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1606714868881</updated>
+    </task>
+    <task id="LOCAL-00022" summary="insert categoria feito">
+      <created>1606717289601</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606717289601</updated>
+    </task>
+    <task id="LOCAL-00023" summary="header removido da função cadastrarCategoria">
+      <created>1606756801546</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606756801546</updated>
+    </task>
+    <task id="LOCAL-00024" summary="deletar categoria">
+      <created>1606777625153</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1606777625153</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update categoria feito">
+      <created>1606783849612</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1606783849612</updated>
+    </task>
+    <task id="LOCAL-00026" summary="insert categoria feito">
+      <created>1606783861820</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606783861820</updated>
+    </task>
+    <task id="LOCAL-00027" summary="sistema de login parcialmente completo, falta autenticação">
+      <created>1606783892285</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606783892285</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,12 +273,34 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="estabelecendo conexâp" />
     <MESSAGE value="certo" />
     <MESSAGE value="header" />
-    <option name="LAST_COMMIT_MESSAGE" value="header" />
+    <MESSAGE value="menu quase dinâmico" />
+    <MESSAGE value="inicio do menu dinâmico" />
+    <MESSAGE value="menu dinâmico pronto" />
+    <MESSAGE value="pequeno alteração de menu inicial" />
+    <MESSAGE value="title alterado" />
+    <MESSAGE value="inicio da página de login" />
+    <MESSAGE value="página de login feita" />
+    <MESSAGE value="deletar" />
+    <MESSAGE value="cadastrar" />
+    <MESSAGE value="alterar" />
+    <MESSAGE value="listar" />
+    <MESSAGE value="cruds" />
+    <MESSAGE value="indexadores" />
+    <MESSAGE value="hi para cada página" />
+    <MESSAGE value="tabela de regiao" />
+    <MESSAGE value="direcionamentor para as alterações e exclusões" />
+    <MESSAGE value="header removido da função cadastrarCategoria" />
+    <MESSAGE value="deletar categoria" />
+    <MESSAGE value="update categoria feito" />
+    <MESSAGE value="insert categoria feito" />
+    <MESSAGE value="sistema de login parcialmente completo, falta autenticação" />
+    <option name="LAST_COMMIT_MESSAGE" value="sistema de login parcialmente completo, falta autenticação" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="163" key="#PHP" timestamp="1606678262016">
@@ -122,17 +311,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606684667424" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1606682332856">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1606694053576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606682332856" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606694053576" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1606684686112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606684686112" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606681044960">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606783896053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606681044960" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606783896053" />
   </component>
 </project>
