@@ -3,7 +3,7 @@
     require_once LAYOUTS . 'header.php';
 
 
-    if (isset($_GET['logado'])) {
+    if (!isset($_SESSION['logado'])) {
         require_once LAYOUTS . 'login.php';
     } else {
         require_once LAYOUTS . 'menu.php';
