@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5a8c21-148c-41b4-8700-73e25777681c" name="Default Changelist" comment="sistema de login parcialmente completo, falta autenticação">
+    <list default="true" id="7d5a8c21-148c-41b4-8700-73e25777681c" name="Default Changelist" comment="deletar transportadora feita">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastros/regiao/listar.php" beforeDir="false" afterPath="$PROJECT_DIR$/cadastros/regiao/listar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadastros/transportadora/alterar.php" beforeDir="false" afterPath="$PROJECT_DIR$/cadastros/transportadora/alterar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606678142442</updated>
       <workItem from="1606678143493" duration="46804000" />
-      <workItem from="1607121462134" duration="1378000" />
+      <workItem from="1607121462134" duration="5042000" />
     </task>
     <task id="LOCAL-00001" summary="estabelecendo conexâp">
       <created>1606679289778</created>
@@ -257,7 +257,70 @@
       <option name="project" value="LOCAL" />
       <updated>1606783892285</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="listagem de região pronto">
+      <created>1607136922979</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1607136922979</updated>
+    </task>
+    <task id="LOCAL-00029" summary="cadastro de região pronto">
+      <created>1607137921722</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1607137921722</updated>
+    </task>
+    <task id="LOCAL-00030" summary="deletar regiao pronto">
+      <created>1607138376259</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1607138376259</updated>
+    </task>
+    <task id="LOCAL-00031" summary="alterar regiao pronto">
+      <created>1607139114972</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1607139114972</updated>
+    </task>
+    <task id="LOCAL-00032" summary="listar trasnportadora feito">
+      <created>1607139762817</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1607139762817</updated>
+    </task>
+    <task id="LOCAL-00033" summary="listar trasnportadora feito">
+      <created>1607139786882</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1607139786882</updated>
+    </task>
+    <task id="LOCAL-00034" summary="cadastrar trasnportadora feito">
+      <created>1607140089327</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1607140089327</updated>
+    </task>
+    <task id="LOCAL-00035" summary="hi corrigido">
+      <created>1607140122740</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1607140122740</updated>
+    </task>
+    <task id="LOCAL-00036" summary="deletar transportadora feita">
+      <created>1607140279518</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1607140279518</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,13 +339,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="estabelecendo conexâp" />
-    <MESSAGE value="certo" />
-    <MESSAGE value="header" />
-    <MESSAGE value="menu quase dinâmico" />
-    <MESSAGE value="inicio do menu dinâmico" />
-    <MESSAGE value="menu dinâmico pronto" />
-    <MESSAGE value="pequeno alteração de menu inicial" />
     <MESSAGE value="title alterado" />
     <MESSAGE value="inicio da página de login" />
     <MESSAGE value="página de login feita" />
@@ -300,7 +356,15 @@
     <MESSAGE value="update categoria feito" />
     <MESSAGE value="insert categoria feito" />
     <MESSAGE value="sistema de login parcialmente completo, falta autenticação" />
-    <option name="LAST_COMMIT_MESSAGE" value="sistema de login parcialmente completo, falta autenticação" />
+    <MESSAGE value="listagem de região pronto" />
+    <MESSAGE value="cadastro de região pronto" />
+    <MESSAGE value="deletar regiao pronto" />
+    <MESSAGE value="alterar regiao pronto" />
+    <MESSAGE value="listar trasnportadora feito" />
+    <MESSAGE value="cadastrar trasnportadora feito" />
+    <MESSAGE value="hi corrigido" />
+    <MESSAGE value="deletar transportadora feita" />
+    <option name="LAST_COMMIT_MESSAGE" value="deletar transportadora feita" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="163" key="#PHP" timestamp="1606678262016">
@@ -319,9 +383,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606684686112" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606783896053">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607140125289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606783896053" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607140125289" />
   </component>
 </project>
