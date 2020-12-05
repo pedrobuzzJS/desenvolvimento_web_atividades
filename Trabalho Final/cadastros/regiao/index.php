@@ -22,7 +22,6 @@ if (isset($_GET['acao'])) {
         $arrDados = catarCampos($conn);
         formularioAlterar($arrDados[0]);
         alterarRegiao($conn);
-        var_dump($_POST);
     } elseif (($_GET['acao'] == 'excluir')) {
         require_once CADASTROS . 'regiao/deletar.php';
         deletarRegiao($conn);
