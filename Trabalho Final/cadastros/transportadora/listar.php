@@ -25,8 +25,8 @@
                         echo '<td>' . $coluna . '</td>';
                     }
                     echo '  <td>';
-                    echo '      <a href="index.php?pg=categoria&acao=alterar&codigo='.$linha[0].'"> Alterar </a>';
-                    echo '      <a href="index.php?pg=categoria&acao=excluir&codigo='.$linha[0].'"> Excluir </a>';
+                    echo '      <a href="index.php?pg=transportadora&acao=alterar&codigo='.$linha[0].'"> Alterar </a>';
+                    echo '      <a href="index.php?pg=transportadora&acao=excluir&codigo='.$linha[0].'"> Excluir </a>';
                     echo '  </td>';
                     echo '</tr>';
                 }
