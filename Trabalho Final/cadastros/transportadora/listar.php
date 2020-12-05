@@ -1,33 +1,37 @@
 <?php
-
     function listar($conn) {
-        $sSql = 'select * from transportadoras';
+        $sSql = 'select IDTransportadora,
+                            NomeConpanhia,
+                            Telefone
+                            from transportadoras;';
         $stmt = $conn->prepare($sSql);
         $stmt->execute();
-        $resultado = $stmt->fetchAll();
+        $resultado = $stmt->fetchAll(PDO::FETCH_NUM);
         ?>
         <div class="container">
-            <table class="table table-striped">
-                <tr>
-                    <td>Código</td>
-                    <td>Companhia</td>
-                    <td>Telefone</td>
-                    <td>Ações</td>
-                </tr>
-        <?php
-        if (count($resultado)) {
+        <table class="table table-striped">
+            <tr>
+                <th>Código</th>
+                <th>Companhia</th>
+                <th>Telefone</th>
+                <th>Ações</th>
+            </tr>
+            <?php
+            if (count($resultado)) {
 
-            foreach ($resultado as $linha) {
-                echo '<tr>';
-                echo '  <td>' . $linha['IDTransportadora'] . '</td>';
-                echo '  <td>' . $linha['NomeConpanhia'] . '</td>';
-                echo '  <td>' . $linha['Telefone'] . '</td>';
-                echo '  <td>';
-                echo '      <a href=&acao=alterar&codigo='.$linha['IDTransportadora'].'"> Alterar </a>';
-                echo '      <a href="&acao=excluir&codigo='.$linha['IDTransportadora'].'"> Excluir </a>';
-                echo '  <td>';
-                echo '  </td>';
-                echo '</tr>';
+                foreach ($resultado as $linha) {
+                    echo '<tr>';
+                    foreach ($linha as $coluna) {
+                        echo '<td>' . $coluna . '</td>';
+                    }
+                    echo '  <td>';
+                    echo '      <a href="index.php?pg=categoria&acao=alterar&codigo='.$linha[0].'"> Alterar </a>';
+                    echo '      <a href="index.php?pg=categoria&acao=excluir&codigo='.$linha[0].'"> Excluir </a>';
+                    echo '  </td>';
+                    echo '</tr>';
+                }
             }
-        }
+            ?>
+        </table>
+        <?php
     }
