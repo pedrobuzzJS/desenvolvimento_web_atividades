@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5a8c21-148c-41b4-8700-73e25777681c" name="Default Changelist" comment="deletar transportadora feita">
+    <list default="true" id="7d5a8c21-148c-41b4-8700-73e25777681c" name="Default Changelist" comment="0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastros/transportadora/alterar.php" beforeDir="false" afterPath="$PROJECT_DIR$/cadastros/transportadora/alterar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/menu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606678142442</updated>
       <workItem from="1606678143493" duration="46804000" />
-      <workItem from="1607121462134" duration="5042000" />
+      <workItem from="1607121462134" duration="5644000" />
     </task>
     <task id="LOCAL-00001" summary="estabelecendo conexâp">
       <created>1606679289778</created>
@@ -320,7 +322,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607140279518</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="alterar transportadora feito">
+      <created>1607140627885</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1607140627885</updated>
+    </task>
+    <task id="LOCAL-00038" summary="0">
+      <created>1607140661774</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1607140661774</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,8 +355,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="title alterado" />
-    <MESSAGE value="inicio da página de login" />
     <MESSAGE value="página de login feita" />
     <MESSAGE value="deletar" />
     <MESSAGE value="cadastrar" />
@@ -364,7 +378,9 @@
     <MESSAGE value="cadastrar trasnportadora feito" />
     <MESSAGE value="hi corrigido" />
     <MESSAGE value="deletar transportadora feita" />
-    <option name="LAST_COMMIT_MESSAGE" value="deletar transportadora feita" />
+    <MESSAGE value="alterar transportadora feito" />
+    <MESSAGE value="0" />
+    <option name="LAST_COMMIT_MESSAGE" value="0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="163" key="#PHP" timestamp="1606678262016">
@@ -383,9 +399,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606684686112" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607140125289">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607140667313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607140125289" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607140667313" />
   </component>
 </project>

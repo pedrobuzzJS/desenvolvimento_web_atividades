@@ -3,7 +3,7 @@
     session_start();
     ob_start();
 ;
-    if (isset($_GET['sair'])) {
+    if (isset($_POST['sair'])) {
         session_destroy();
         session_start();
     }
